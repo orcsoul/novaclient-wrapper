@@ -46,14 +46,14 @@ read  -p "Datacenter: " datacenter
 #read -p "Service Name(?): " servicename cloudserversopenstack
 #read -p "Volume Service Name(?): " volumeservicename
 #read -p "Endpoint Type(?): " endpointtype
-read -p "API Version: (2, 1.1) " apiversion
+#read -p "API Version: (2, 1.1) " apiversion
 
 #Using Password
-#echo -e "The full nova-client command you are executing is: "
-#echo -e "nova --os_username $username --os_password $password --os_tenant_name $ostenant --os_auth_url $authurl --os_region_name $datacenter --service_type compute --service_name cloudServersOpenStack --os_compute_api_version $apiversion $args \n"
-#nova --os_username $username --os_password $password --os_tenant_name $ostenant --os_auth_url $authurl --os_region_name $datacenter --service_type compute --service_name cloudServersOpenStack --os_compute_api_version $apiversion $args
+#echo -e "\nThe full nova-client command you are executing is: "
+#echo -e "nova --os_username $username --os_password $password --os_tenant_name $ostenant --os_auth_url $authurl --os_region_name $datacenter --service_type compute --service_name cloudServersOpenStack --os_compute_api_version 2 $args \n"
+#nova --os_username $username --os_password $password --os_tenant_name $ostenant --os_auth_url $authurl --os_region_name $datacenter --service_type compute --service_name cloudServersOpenStack --os_compute_api_version 2 $args
 
 #Using API Key (deprecated function)
-echo -e "The full nova-client command you are executing is: "
-echo -e "nova --os_username $username --apikey $apikey --os_tenant_name $ostenant --os_auth_url $authurl --os_region_name $datacenter --service_type compute --service_name cloudServersOpenStack --os_compute_api_version $apiversion $args \n"
-nova --os_username $username --apikey $apikey --os_tenant_name $ostenant --os_auth_url $authurl --os_region_name $datacenter --service_type compute --service_name cloudServersOpenStack --os_compute_api_version $apiversion $args
+echo -e "\nThe full nova-client command you are executing is: "
+echo -e "nova --os_username $username --apikey $apikey --os_tenant_name $ostenant --os_auth_url $authurl --os_region_name $datacenter --service_type compute --service_name cloudServersOpenStack --os_compute_api_version 2 $args \n"
+nova --os_username $username --apikey $apikey --os_tenant_name $ostenant --os_auth_url $authurl --os_region_name $datacenter --service_type compute --service_name cloudServersOpenStack --os_compute_api_version 2 $args
